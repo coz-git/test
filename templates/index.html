@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title Bar -->
+  <title>Upself Care</title>
+  <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 4.5.2 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <a class="navbar-brand" href="">
+      <img src="{{ url_for('static', filename='images/logo-full-color.png') }}" width="40" height="40"
+        alt="Upself Care" />
+      <span class="text-logo">upselfcare</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+      aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item mx-3">
+          <a class="nav-link" href="#page-top">Tentang Kami</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link" href="#page-top">Konseling</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link" href="#page-top">Pra-Diagnosis</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="navbar-link" href="">
+            <img src="{{ url_for('static', filename='images/account.png') }}" width="30" height="30" alt="Account" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section id="tentang">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img class="image-title" src="{{ url_for('static', filename='images/Beranda-01.png') }}" alt="blabbla" />
+        </div>
+        <div class="col-md-6">
+          <h1>Bicara dengan psikolog kapan saja</h1>
+          <p>
+            Kini berbicara dengan psikolog menjadi semakin mudah dan dapat
+            diakses dari seluruh penjuru wilayah Indonesia. Dapatkan kemudahan
+            konseling secara daring bersama kami.
+          </p>
+          <p>Mari kita wujudukan Indonesia sehat mental!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="konseling">
+    <div class="container">
+      <h3>Empat Langkah Mudah Konseling</h3>
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <h3>Pilih psikolog</h3>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h3>Ceritakan kondisimu</h3>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h3>Bayar</h3>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h3>Chat</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-section" id="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-2">
+          <img class="footer-logo" src="{{ url_for('static', filename='images/logo-bw.png') }}" width="150" height="150"
+            alt="Upself-Logo" />
+          <h5>upselfcare</h5>
+        </div>
+        <div class="col-lg-5"></div>
+        <div class="col-lg-5"></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</body>
+
+</html>

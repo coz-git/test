@@ -1,0 +1,81 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+    margin: 5%;
+    text-align: justify;
+}
+
+h3 {
+    font-weight: bold;
+    margin: 2% 0;
+    text-align: center;
+}
+
+h5 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding: 0;
+    text-align: center;
+}
+
+p {
+    margin: 5%;
+    text-align: justify;
+}
+
+
+/* ID */
+
+#tentang {
+    background-image: linear-gradient(to right, #17c6e1, #0c7686);
+    color: white;
+    padding: 10% 0;
+}
+
+#konseling {
+    color: #0c7686;
+    padding: 5% 0;
+}
+
+#footer {
+    background-color: #0c7686;
+    padding: 5% 5%;
+}
+
+
+/* Class */
+
+.image-title {
+    margin: 5%;
+    width: 75%;
+}
+
+.footer-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar {
+    background-color: white;
+    padding: 1% 10%;
+}
+
+.nav-link {
+    color: #0d7686;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: #17c6e1;
+}
+
+.text-logo {
+    color: #0d7686;
+    font-weight: 900;
+    padding-left: 5%;
+}
